@@ -1,0 +1,65 @@
+
+body{
+    font-family: poppins;
+    background-color: red;
+    background: linear-gradient(rgb(235, 227, 227), rgb(71, 71, 71)70%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section.module{
+    font-size: 20px;
+    color: white;
+    
+    text-transform: uppercase;
+    margin: 2.4rem 0;
+    
+    
+}
+
+
+table{
+    color: rgb(2, 2, 2);
+    border-collapse: collapse;
+    tbody{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        tr{
+            border-radius: 20px;
+            background-color: slategrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:nth-last-child(even){
+                background-color: #4e4646;
+            }
+            td{
+               padding: 10px;
+                a:is(:link, :visited)
+                text-decoration: none;
+                img{
+                    transform: scale(0.9);
+                    transition: all 0.2s ease-in;
+                }
+
+        
+            }
+            
+            a:is(:hover)img{
+                transform: scale(1);
+            }
+        }
+
+    }
+}

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
 body{
     font-family: poppins;
     background-color: red;
@@ -20,7 +20,7 @@ header{
     img{
         margin-top: 156px;
         
-        margin-left: 77px;
+        margin-left: 55px;
     }
 }
 
@@ -73,13 +73,177 @@ section.login {
 form{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     
 
-    input.button{
+    input,button{
         border: none;
-        border-radius: 280px;
+        border-radius: 50px;
         padding: 10px;
-        width: 300px;
+        width: 280px;
+        outline: none;
+        transition: all 0.5 ease-in;
     }
+    input{
+        color: rgb(233, 226, 226) 9;
+        font-size: 15px;
+        font-weight: 400;
+        &::placeholder{
+            color: rgb(148, 129, 101);
+            text-transform: uppercase;
+        }
+        &:focus{
+            background-color: rgb(68, 64, 64);
+            color: white;
+        }
+    }
+}
+
+
+
+
+
+
+/* Registro */
+
+
+body.register {
+    background: linear-gradient(rgb(221, 217, 217), rgb(19, 18, 18)90%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    margin-top: 6%; 
+
+    menu {
+        padding: 0;
+        display: flex;
+    }
+
+    a {
+        color: rgb(241, 234, 234);
+    }
+
+    .lancelot-regular {
+        font-family: "Lancelot", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section{
+        padding-top: 3%;
+    }
+    menu{
+        padding-top: 30%;
+    }
+
+    img{
+        width: 44px;
+        
+    }
+}
+
+
+/* dashboard*/
+
+body.dashboard {
+    background: linear-gradient(rgb(57, 69, 87), rgb(19, 18, 18)90%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 80%; 
+}
+
+header img {
+    width: 123px;
+}
+h1{
+    font-size: 24px;
+    color: fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2.4rem 0;
+}
+
+menu{
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        list-style: none;
+        li{
+            background-color: rgb(86, 86, 92);
+            border-radius: 32px;
+            padding: 1rem;
+            width: 300px;
+            a:is(:link, ::visited){
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                color: #ffffff;
+                text-decoration: none;
+                background-color: #ffffff00;
+                border: none;
+
+        }
+    }
+}
+
+a{
+    img{
+        transition: all 0.5s ease-in;
+    }
+
+    &:hover{
+        a{
+            img{
+                transform: scale(1.1);
+            }
+            span{
+                transform: translateX(10px);
+            }
+        }
+    }
+}
+}
+
+.mbur{
+    margin-right: 2021px;
+   
+}
+
+
+img{
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+    justify-content:start;
+    width: 400px;
+    
+}
+
+
+
+/*users model*/
+
+body.ia{
+    color: #ffffff;
+    background-color: #ffffff;
 }
