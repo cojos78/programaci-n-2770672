@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/wireframe/css/style7.css">
+</head>
+<body>
+    <main>
+        <h1>Show users</h1>
+        <section>
+            <form enctype="multipart/form-data">
+                <img id="upload" src="/wireframe/img/Group 3.png" width="200" alt="" required>
+                <input type="file" name="photo" id="photo" accept="image/*">
+                <br>
+                <input type="email" name="email" placeholder="Name" required>
+                <input type="password" name="password" placeholder="Phone" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+            </form>
+            <div class="menu-container">
+                
+                    <a  class="menu-container" href="register.html">ADD</a>
+                
+            </div>
+        </section>
+    </main>
+    
+    <a href="/wireframe/html/login.html"><img src="/wireframe/img/arrow-left-solid.svg"></a>
+    <script src="/wireframe/js/jquery-3.7.1.min.js"></script>
+    <script src="/wireframe/js/sweetalert2.js.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $('#upload').click(function (e) {
+                e.preventDefault();
+                $('#photo').click();
+            });
+    
+            $('#photo').change(function (e) {
+                let reader = new FileReader();
+                reader.onload = function (event) {
+                    $('#upload').attr('src', event.target.result);
+                }
+                reader.readAsDataURL(this.files[0]);
+            });
+        });
+    </script>
+    
+</body>
+</html>

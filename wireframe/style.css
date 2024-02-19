@@ -157,7 +157,7 @@ body.dashboard {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-
+    
     display: flex;
     justify-content: center; /* Centra el contenido horizontalmente */
     
